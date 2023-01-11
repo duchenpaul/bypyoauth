@@ -26,3 +26,13 @@ NOTE
 ----
 
 `Profile`, `Procfile.windows`, `runtime.txt` are for Heroku deployment only, you can ignore them.
+
+
+## Docker
+1. image build:
+```bash
+docker build -t duchenpaul/bypyoauth:latest .
+
+docker push duchenpaul/bypyoauth:latest
+```
+

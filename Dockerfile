@@ -4,6 +4,6 @@ RUN pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 ADD . /app
 WORKDIR /app
 RUN pip install -r requirements.txt 
-EXPOSE 8000
+EXPOSE 8080
 
-CMD ["gunicorn"  , "-b", "0.0.0.0:8000", "app:app"]
+CMD ["gunicorn"  , "-b", "0.0.0.0:8080", "app:app"]
